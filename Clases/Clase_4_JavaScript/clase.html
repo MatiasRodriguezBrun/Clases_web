@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        var ejemplo = "Mostrando en consola"
+        console.log(ejemplo)
+    </script>
+
+    <script>
+        paises = ['Arg', 'Chil', 'Uru'];
+        for (pais of paises){
+            console.log(pais)
+        }
+
+        paises = ['Arg', 'Chil', 'Uru'];
+        for (pais in paises){
+            console.log(pais)
+        }
+
+        var auto = {
+	        marca: "Ford",
+	        modelo: "Avanzado",
+        }
+
+        for (atributo in auto) {
+	        console.log(atributo, "...", auto[atributo]);
+        }
+    </script>
+
+    <script>
+        function suma1 (n1,n2){
+	    let rtdo = n1 + n2;
+	    return rtdo;
+    }
+    console.log(suma1(5,3));
+
+    let suma2 = function (n1,n2){
+	    let rtdo = n1 + n2;
+	    return rtdo;
+    }
+
+    console.log(suma2(5,3));
+
+    let suma3 = (n1, n2) => n1 + n2;
+
+    console.log(suma3(5,3));
+
+    
+    let nombre = prompt("Ingrese su nombre");  
+    if (nombre == null) {
+        alert("NO ingreso su nombre");
+    }
+    </script>
+
+
+
+
+
+</body>
+</html>
+

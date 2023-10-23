@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 15px;
+    background-color: #7869BE;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+}
+
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: auto;
+    height: 400px;
+    padding: 20px;
+    background-image: url("../img/wallpaper_spoty.jpg");
+    background-position: bottom;
+    background-attachment: scroll;
+    color:white
+}
+
+aside p {
+    font-style: italic;
+}
+
+section{
+    flex: 70%;
+    background-color:  bisque;
+    padding: 20px;
+}
+
+footer{
+    padding: 5px;
+    text-align: center;
+    background-color: palevioletred;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+ /*es una query que dice q a partir de 700px para abajo se coloquen en columna los elementos*/
+@media screen and (max-width: 700px){ /*es el tamaño defecto de una tablet*/
+    nav, .row{
+        flex-direction: column;
+    }
+}

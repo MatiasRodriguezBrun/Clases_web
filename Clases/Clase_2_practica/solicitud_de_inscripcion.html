@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="index.html" method="get">
+        DNI: <input type="text" name="DNI" maxlength="8" required> <br>
+        Nombre: <input type="text" name="nombre"  maxlength="20" required> <br>
+        Apellido: <input type="text" name="Apellido" placeholder="Ingrese su apellido" required> <br>
+        Fecha de nacimiento: <input type="date" name="fechanac" id=""><br>
+
+        <select name="ciudades" id="">
+            <option value="bs_as">Buenos Aires</option>
+            <option value="caba">Capital Federal</option>
+            <option value="rio_negro" selected>Rio Negro</option>
+        </select>
+        <br><br>
+        <label for="comentarios">Ingrese comentarios</label><br>
+        <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Comentarios"></textarea>
+        <br>
+        <input type="submit" value="Guardar">
+
+    </form>
+</body>
+</html
