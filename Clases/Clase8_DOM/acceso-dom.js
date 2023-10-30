@@ -33,7 +33,7 @@ for (const persona of personas) {
     li.innerHTML = persona
     padre.appendChild(li);
 }
-
+/*
 //Formulario
 document.getElementById("nombre").value = "Matias";
 document.getElementById("edad").value = 20;
@@ -50,3 +50,15 @@ function validarFormulario(e){
     e.preventDefault();
     console.log("Formulario Enviado");
 }
+*/
+let dolar = document.getElementById("boton-descuento-individual1");
+console.log("Contenido: ", dolar.innerHTML);
+
+
+import fetch from "fetch";
+const url = "https://dolarapi.com/v1/dolares/blue";
+const response = await fetch(url);
+const body = await response.json();
+const venta = body["venta"];
+console.log(venta);
+
