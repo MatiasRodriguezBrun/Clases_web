@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <title>VUE.JS</title>
+</head>
+<body>
+    <h1>VUE JS</h1>
+
+    <div id="app">
+        <div v-if="showPlayers">
+            <p>{{player}} - {{team}} - {{age}}</p>
+
+            <button @click="age++">Increase age</button>
+            <button @click="age--">Decrease age</button>
+            <div @click="changePlayer">Change player</div>
+            
+        </div>
+
+        <button @click="toggleShowPlayers">
+            <span v-show="showPlayers">Hide players</span>
+            <span v-show="!showPlayers">Show players</span>
+        <!-- Otra forma de escribirlo:
+            {{ showPlayers ? 'Hide players' : 'Show players' }}
+        -->
+        </button>
+
+    
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
